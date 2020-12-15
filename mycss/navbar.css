@@ -3,29 +3,35 @@
     padding: 0;
     font-family: 'Source Code Pro', monospace;
     /* background-color: black; */
+ 
 }
 
 nav{
-    position: sticky;
     position: -webkit-sticky;
+    position: sticky;
     display: flex;
+    top: 0;
+    z-index: 5;
     height: 10vh;
     background-color: rgba(0,0,0,0.75);
     border-bottom: 2px solid rgb(27,170,255);
    
 }
 #left_div{
-    flex: 1;
+    flex:1;
         color: rgb(238, 245, 255);
         font-size: 35px;
-        padding:0 100px;
+      padding-left: 4%;
         line-height: 80px;
         font-family: 'Source Code Pro', monospace;
         /* background-color: tomato; */
+        position: relative;
+        box-sizing: border-box;
+        
 }
 #right_div{
    flex: 3;
-    background-color: tomato;
+    /* background-color: rgb(172, 167, 199); */
     line-height: 80px;
 }
 #links{
@@ -116,6 +122,14 @@ a.active,a:hover{
     float: right;
 }
 
+.logo{
+   height: 80%;
+   width: 80%;
+   box-sizing: border-box;
+   padding-top: 5%;
+
+}
+
 @media (max-width: 1080px){
     .logo{
         font-size: 1.5rem;
@@ -157,5 +171,16 @@ a.active,a:hover{
     }
     nav ul.show{
         right: 0;
+    }
+}
+@media (max-width: 760px){
+
+    .logo{
+        font-size: 1.2rem;
+        background-color: green;
+    }
+    #left_div{
+        margin-left: 0;
+        /* padding:0 50px; */
     }
 }
