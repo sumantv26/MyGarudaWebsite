@@ -17,7 +17,7 @@
 
 .cover{
     height: 70vh;
-    background-color: red;
+/*     background-color: red; */
     background-image: url("/images/garuda/bg/garuda.jpg");
     background-size: cover;
     background-position: center;
