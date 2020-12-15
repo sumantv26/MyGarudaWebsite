@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gauda Linux</title>
+    <link rel="stylesheet" href="mycss/navbar.css">
+
+    <link rel="stylesheet" href="/mycss/mainPage.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;500&display=swap" rel="stylesheet">
+
+<!-- ============jq========= -->
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function(){
+        $("#icon_bars").click(function(){
+            $('ul').toggleClass('show');
+        })
+    });
+</script>
+</head>
+
+<body>
+    <nav>
+        <div id="left_div">
+            <h5 class="logo">GARUDA LINUX</h1>
+        </div>
+        <div id="right_div">
+            <i  class="fa fa-bars" id="icon_bars" ></i>
+            <ul id="links">
+   
+                <li><a class="active main_links" href="index.html" class="navbtn current">Home</a></li>
+                <li><a class="main_links" href="downloads.html" class="navbtn">Download</a></li>
+                <li><a class="main_links" href="https://forum.garudalinux.org/" class="navbtn" rel="noopener noreferrer" target="_blank">Forum</a></li>
+                <li><a  class="main_links" href="about.html" class="navbtn">About</a></li>
+                <li class="dropdown">
+                    <a href="" class="main_links">Support</a>
+                    <div class="dropdown-content">
+                       
+                        <p><a  class="dropdown_links" href="https://wiki.garudalinux.org/" rel="noopener noreferrer"  target="_blank"><i class="fa fa-fw fa-newspaper-o"></i>Wiki</a></p> 
+                        <p><a  class="dropdown_links" href="https://lonewolf.pedrohlc.com/chaotic-aur/"><i class="fa fa-fw fa-file-zip-o"></i>Package Repository</a></p>
+                       
+                    </div>
+                </li>
+
+            </ul>
+
+
+            </li>
+            </ul>
+        </div>
+    </nav>
+</body>
+
+</html>

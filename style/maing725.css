@@ -1,0 +1,289 @@
+/* *{
+    background-color: white;
+} */
+
+.cover{
+    text-align: center;
+    height: 70vh;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    /* padding-left: 0 !important; */
+     /* background: url("../../images/garuda/bg/garud.png") no-repeat center center/cover;  */
+     display: flex;
+    flex-direction: row;
+
+    justify-content: flex-end;
+    /* background-color: green; */
+}
+.leftDiv{
+        position: relative;
+        /* background-color: red; */
+      flex: 1;
+      /* background: url("../images/garuda/bg/garud.png") no-repeat center center/cover; */
+      box-sizing: border-box;
+}
+
+#garudImg{
+    /* float: left;*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* background-color: yellow; */
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.rightDiv{
+    flex: 2;
+    position: relative;
+    /* background-color: red; */
+   
+}
+
+
+.cover_text{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    vertical-align: bottom;
+    width: 75%;
+    padding: 5%;
+    text-align: center;
+    background-color: rgba(83, 81, 81, 0.3);
+    backdrop-filter: blur(10px);
+    
+}
+.download_btn {
+    border-radius: 4px;
+    background-color: hsl(0, 3%, 15%);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 100%;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .download_btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .download_btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .download_btn:hover span {
+    padding-right: 25px;
+  }
+  
+  .download_btn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+.cover_text h1{
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+    font-size: 2.5rem;
+    font-weight: 900;
+    animation: letter 2s 1;
+}
+
+.cover_text a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.75rem;
+    display: inline-block;
+    margin: 0.5rem 0.3rem;
+}
+/* ------------------------- End of Cover ----------------------------- */
+
+.translate_div{
+    position: relative;
+
+}
+.translate_dropdown{
+   position: absolute;
+    left: 50%;
+
+    transform: translate(-50%);
+    background-color: red;
+    
+}
+
+
+.container{
+    margin-top: 0.5vh;
+    padding-top: 10vh;
+}
+
+.container h2{
+    text-align: center;
+}
+
+.why_Garuda{
+    color: black;
+    background-color: white;
+    padding-bottom: 10vh;
+}
+
+ol,ul{
+    padding-left: 1.75rem;
+    padding-right: 1.25rem;
+}
+
+ol li h5, ul li h5{
+    font-weight: 100;
+}
+
+ol li{
+    line-height: 1.25rem;
+}
+
+ul{
+    list-style-type: square;
+} 
+/* ------------ Special features - Scards ---------- */
+.spotlights{
+    margin: 5rem 0;
+    padding-left: 0 !important;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5%;
+}
+.scards{
+    /* padding: 7rem 3rem; font-size: 0.9rem; */
+    /* clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%); */
+    /* background-color: black; */
+    /* background-image: linear-gradient(0.4turn, black, black,black,purple); */
+    /* margin-bottom: -8rem;
+    transition: all 1s ease; */
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    /* padding: 20px; */
+    font-size: 30px;
+    text-align: center;
+    box-sizing: border-box;
+    
+}
+
+.scards:nth-child(odd){
+    /* background-color: white; */
+    /* background-image: linear-gradient(0.55turn, white, white,white,pink); */
+    /* opacity: 0.9; */
+    /* color: black; */
+}
+#first_scards{
+    /* padding-bottom: 12rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    margin-bottom: -10rem; */
+  }
+
+.spotlights>h1, .scards>h2{
+    text-align: center;
+}
+.scards>img{
+    /* display: block;
+    margin: 2rem auto; */
+    max-width: 80vw;
+    max-height: 50vh;
+}
+
+/* =====================footer====================== */
+
+.footer{
+    display: flex;
+    flex-direction: row;
+}
+.footer div{
+    padding: 2%;
+}
+
+@media screen and (max-width: 1000px) {
+    .cover {
+      /* background-color: lightgreen; */
+      /* height: 100vh; */
+      flex-direction: column;
+    }
+    .cover_text{
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        font-size: .8rem;
+   
+    }
+    
+  }
+  @media screen and (max-width: 530px){
+    .cover {
+        /* background-color: lightgreen; */
+   
+        flex-direction: column;
+        /* width: 100%; */
+      }
+      .leftDiv{
+     /* background-color: grey; */
+     box-sizing: border-box;
+      }
+      .rightDiv{
+          flex:1 ;
+          height: 50%;
+          width:100% ;
+      }
+    .cover_text{
+        /* position: absolute;
+        left: 50%;
+        top:    30%; */
+        font-size: .7rem;
+        padding: 0px;
+   
+    }
+    .download_btn {
+
+        font-size: .8rem;
+        width: 100%;
+      
+      }
+      #garudImg img{
+     height: 100%;
+     width: 100%;
+    }
+    .translate_div{
+        position: absolute;
+         left: 50%;
+     width: 10px;
+         transform: translate(-50%);
+         background-color: green;
+         
+     }
+
+     .footer{
+        display: flex;
+        flex-direction: column;
+    }
+  }
+
+
+  /* ==============bootstrap======== */
+  .row{
+      background-color: salmon;
+  }
+  .row h1,h2{
+      text-align: center;
+      color: red;
+      
+
+  }

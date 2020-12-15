@@ -1,0 +1,162 @@
+.cover{
+    text-align: center;
+    min-height: 85vh;
+    margin-top: 0.1rem;
+    width: 98.9vw;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    padding-left: 0 !important;
+    background: url("../images/garuda/bg/garud.png") no-repeat center center/cover;
+     /* display: flex; */
+    /* flex-direction: column; */
+    position: relative;
+    justify-content: flex-end;
+    /* background-color: green; */
+}
+.leftDiv{
+        height: 40vh;
+}
+.rightDiv{
+    flex: 2;
+    position: relative;
+}
+
+
+.cover_text{
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    vertical-align: bottom;
+    width: 75%;
+    padding: 5%;
+    font-weight: 100px;
+    text-align: center;
+    background-color: rgba(83, 81, 81, 0.3);
+    backdrop-filter: blur(10px);
+    padding-left: 2rem;
+}
+.download_btn {
+    border-radius: 4px;
+    background-color: hsl(0, 3%, 15%);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .download_btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .download_btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .download_btn:hover span {
+    padding-right: 25px;
+  }
+  
+  .download_btn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+.cover_text h1{
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+    font-size: 2.5rem;
+    font-weight: 900;
+    animation: letter 2s 1;
+}
+
+.cover_text a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.75rem;
+    display: inline-block;
+    margin: 0.5rem 0.3rem;
+}
+
+/* ------------------------- End of Cover ----------------------------- */
+
+.container{
+    margin-top: 0.5vh;
+    padding-top: 10vh;
+}
+
+.container h2{
+    text-align: center;
+}
+
+.why_Garuda{
+    color: black;
+    background-color: white;
+    padding-bottom: 10vh;
+}
+
+ol,ul{
+    padding-left: 1.75rem;
+    padding-right: 1.25rem;
+}
+
+ol li h5, ul li h5{
+    font-weight: 100;
+}
+
+ol li{
+    line-height: 1.25rem;
+}
+
+ul{
+    list-style-type: square;
+}
+
+/* ------------ Special features - Scards ---------- */
+.spotlights{
+    margin: 5rem 0;
+    padding-left: 0 !important;
+}
+.scards{
+    padding: 8rem 3rem;
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+    background-color: black;
+    background-image: linear-gradient(0.4turn, black, black,black,purple);
+    margin-bottom: -8rem;
+    transition: all 1s ease;
+}
+
+.scards:nth-child(odd){
+    background-color: white;
+    background-image: linear-gradient(0.55turn, white, white,white,pink);
+    color: black;
+}
+#first_scards{
+    margin-top: 1rem;
+    padding-bottom: 12rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    margin-bottom: -10rem;
+  }
+
+.spotlights>h1, .scards>h2{
+    text-align: center;
+}
+.scards>img{
+    display: block;
+    margin: 4rem auto;
+    max-width: 80vw;
+    min-width: 50vw;
+}
