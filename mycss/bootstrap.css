@@ -1,0 +1,105 @@
+.shree{
+    padding: 0;
+    margin: 0;
+}
+.navbar-nav{
+    text-align: center;
+    
+}
+.dropdown-menu .dropdown-item{
+    color: white ;
+    text-align: center;
+}
+.dropdown-menu .dropdown-item:hover{
+  background-color: transparent;
+    color: #66a9f0;
+}
+
+.cover{
+    height: 70vh;
+    /* background-color: red; */
+    background-image: url("/images/garuda/bg/garuda.jpg") ;
+    background-size: cover;
+    background-position: center;
+    
+}
+.left-part{
+    /* background-color: green; */
+}
+.right-part{
+    /* background-color: goldenrod; */
+}
+.welcome-text{
+    color: white;
+    font-size: .4rem;
+}
+
+
+.cover-text{
+    background-color: rgba(50,50,50,0.3);
+    text-align: center;
+   
+    padding: 10%;
+    border-radius: 1rem;
+    backdrop-filter: blur(5px);
+}
+
+
+@media (max-width: 544px) {  
+    .welcome-text h4 {font-size:1rem;} /*1rem = 16px*/
+  }
+   
+  /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+  @media (min-width: 768px) {  
+    h1 {font-size:2rem;} /*1rem = 16px*/
+  }
+   
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) { 
+    h1 {font-size:2.5rem;} /*1rem = 16px*/
+  }
+   
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {  
+    h1 {font-size:3rem;} /*1rem = 16px*/    
+  }
+
+/* =======================download button============== */
+.button {
+    border-radius: 4px;
+    background-color:  rgba(44, 43, 43, 0.3);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1rem;
+    padding: 2%;
+    width: 50%;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 2%;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -5%;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 10%;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }

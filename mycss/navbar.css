@@ -184,3 +184,16 @@ a.active,a:hover{
         /* padding:0 50px; */
     }
 }
+
+/* =============================== */
+.mr-auto{
+    margin-right: auto !important;
+    color: red;
+}
+.navbar-toggleable-md .navbar-collapse {         
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;  
+} 
+nav{
+    color: red;
+}
