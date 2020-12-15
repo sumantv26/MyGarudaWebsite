@@ -17,8 +17,8 @@
 
 .cover{
     height: 70vh;
-    /* background-color: red; */
-    background-image: url("/images/garuda/bg/garuda.jpg") ;
+/*     background-color: red; */
+    background-image: url("/gaming.jpg");
     background-size: cover;
     background-position: center;
     
@@ -49,21 +49,6 @@
     .welcome-text h4 {font-size:1rem;} /*1rem = 16px*/
   }
    
-  /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-  @media (min-width: 768px) {  
-    h1 {font-size:2rem;} /*1rem = 16px*/
-  }
-   
-  /* Large devices (desktops, 992px and up) */
-  @media (min-width: 992px) { 
-    h1 {font-size:2.5rem;} /*1rem = 16px*/
-  }
-   
-  /* Extra large devices (large desktops, 1200px and up) */
-  @media (min-width: 1200px) {  
-    h1 {font-size:3rem;} /*1rem = 16px*/    
-  }
-
 /* =======================download button============== */
 .button {
     border-radius: 4px;
